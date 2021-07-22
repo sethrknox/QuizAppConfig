@@ -15,5 +15,11 @@ spring:
         uri: lb://quiz
         predicates:
         - Path=/quiz/**
+      # ================= AccountService
+      - id: accountsMS
+        uri: lb://account
+        predicates:
+        - Path=/account/**
+      
   main:
     web-application-type: reactive
