@@ -16,7 +16,7 @@ spring:
         predicates:
         - Path=/quiz/**
       # ================= AccountService
-      - id: accountsMS
+      - id: account
         uri: lb://account
         predicates:
         - Path=/account/**
